@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+Cache Logic :
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+time complexity to search data in array = O(n)
+time complexity to search data in object/map = O(1)
 
-In the project directory, you can run:
+[ i, ip, iph, iphon, iphone]
 
-### `npm start`
+{
+    ip:
+    iph:
+    ipho:
+    iphon:
+    iphone: 
+}
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O(1) > O(n)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Video 1:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.Drawing the apps layout by divided into different components and adding tailwind css
+2.Displaying video cards in video container by using Youtube video api
+3.Building a toggle feature with redux store and disptaching actions and reading data whereever needed
+4.Routing the app with react-router-dom 
+5.Building a watchPage and getting the data of the video clicked based on the searchParams
+6.Making a API call with the videoId we got by using searchParams to get that particular clicked video's details ex: Title, channel title, views etc
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Video 2 : 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.Building search feature with youtube's api 
+2.Optimizing the search with debouncing
+3.Understanding what kind of data format to store in redux based on time complexity and DSA
+4.Storing and retreving the cached results from searchQuery in and from redux store
+5.Understanding the data structure of comments
+6.Understanding how to creat a single comment component , then map over it to display a list of commentsList by calling the commentsList recursively and rendering it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Video 3:
 
-### `npm run eject`
+1.Buidling live Chat feature
+2.Dealing with Live chat challenges
+   a. Data Layer : Getting the live data api
+   b. UI Layer : Update the data in an efficient way
+3.Two Ways to deal with this challenge
+      a. Web Sockets : Handshake between UI layer/ one server and Server wherein the data flow is bidirectional with no regural intervals , initial connection takes a bit of a time 
+      b. API polling : The data flow is unidirectional - From server to UI with regular interviews, the UI will keep polling data from server after some seconds
+4.Understanding how UI layer is handled to improve the UX: Deleting the number of chats after a certain number of chats from above to keep the page from freezing and bloating, this is 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
