@@ -1,0 +1,103 @@
+✅ AppContext.js
+import { createContext } from "react";
+
+const AppContext = createContext({
+  isMenuOpen: true,
+  toggleMenu: () => {},
+});
+
+export default AppContext;
+
+✅ AppLayout.jsx
+import React, { useState } from "react";
+import AppContext from "./AppContext";
+import Header from "./components/Header";
+import SideBar from "./components/SideBar";
+
+const AppLayout = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
+
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+
+  return (
+    <AppContext.Provider value={{ isMenuOpen, toggleMenu }}>
+      <div className="app">
+        <Header />
+        <SideBar />
+      </div>
+    </AppContext.Provider>
+  );
+};
+
+export default AppLayout;
+
+✅ Header.jsx
+import React, { useContext } from "react";
+import AppContext from "../AppContext";
+
+const Header = () => {
+  const { toggleMenu } = useContext(AppContext);
+
+  return (
+    <div className="p-4 shadow-md flex justify-between items-center">
+      <button onClick={toggleMenu} className="px-4 py-2 bg-gray-200 rounded">
+        Toggle Menu
+      </button>
+      <h1 className="font-bold text-xl">Header</h1>
+    </div>
+  );
+};
+
+export default Header;
+
+✅ SideBar.jsx
+import React, { useContext } from "react";
+import AppContext from "../AppContext";
+
+const SideBar = () => {
+  const { isMenuOpen } = useContext(AppContext);
+
+  if (!isMenuOpen) return null;
+
+  return (
+    <div className="p-4 shadow-lg w-2/12">
+      <ul>
+        <li>Home</li>
+        <li>Shorts</li>
+        <li>Videos</li>
+      </ul>
+
+      <h1 className="font-bold">Subscriptions</h1>
+      <ul>
+        <li>Taylor Swift</li>
+        <li>CineDesi</li>
+        <li>Akshay Saini</li>
+        <li>Niamh Adkins</li>
+      </ul>
+
+      <h1 className="font-bold">Explore</h1>
+      <ul>
+        <li>Music</li>
+        <li>Sports</li>
+        <li>Gaming</li>
+        <li>Movies</li>
+      </ul>
+    </div>
+  );
+};
+
+export default SideBar;
+
+✅ How this works
+
+You removed Redux entirely.
+
+AppLayout holds the shared state (isMenuOpen) and provides it via AppContext.Provider.
+
+Header toggles the sidebar by calling toggleMenu.
+
+SideBar consumes the state to decide whether to render or not.
+
+💡 This setup behaves exactly like your Redux version, just using Context + useState instead of store + dispatch.
+
+Would you like me to show how to add the same UserContext (for username) alongside this AppContext in the same layout?
