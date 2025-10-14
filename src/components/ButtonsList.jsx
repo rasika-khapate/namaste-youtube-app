@@ -14,15 +14,6 @@ const ButtonsList = () => {
   ];
   return (
     <div className="flex">
-      {/* <Buttons name="All" />
-      <Buttons name="Music" />
-      <Buttons name="Taylor Swift" />
-      <Buttons name="mixes" />
-      <Buttons name="Sitcoms" />
-      <Buttons name="Computer Programming" />
-      <Buttons name="Reaction Videos" />
-      <Buttons name="Cooking" /> */}
-
       {list.map((items, index) => (
         <Buttons key={index} name={items} />
       ))}

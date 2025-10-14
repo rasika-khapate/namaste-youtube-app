@@ -17,3 +17,5 @@ export const getYouTubeVideoDetailsAPI = (videoId) => {
 export const getYoutubeSearchAPI = (searchId) => {
   return `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=${searchId}&key=${Google_API_Key}`;
 };
+
+export const OFFSET_LIVE_LIMIT = 9;

@@ -60,7 +60,7 @@ const Header = () => {
     const data = await fetch(getYoutubeSearchAPI(searchQuery));
     const json = await data.json();
     // console.log(json.items);
-    console.log("API Call - " + searchQuery);
+    // console.log("API Call - " + searchQuery);
     setShowSuggestions(json.items);
 
     // when api call is made , it means that that data isnt cached yet, so we have to cache it

@@ -45,7 +45,10 @@ O(1) > O(n)
 3.Two Ways to deal with this challenge
       a. Web Sockets : Handshake between UI layer/ one server and Server wherein the data flow is bidirectional with no regural intervals , initial connection takes a bit of a time 
       b. API polling : The data flow is unidirectional - From server to UI with regular interviews, the UI will keep polling data from server after some seconds
-4.Understanding how UI layer is handled to improve the UX: Deleting the number of chats after a certain number of chats from above to keep the page from freezing and bloating, this is 
+4.Understanding how UI layer is handled to improve the UX: Deleting the number of chats after a certain number of chats from above to keep the page from freezing and bloating, we are achieving this with the help of redux.
+5.Creating LiveChat for displaying chat msgs and ChatMessages for list of chat msgs
+6.Getting random names and sentences and setting up in helper.jsx
+7.Applying appropriate css to make it look like YT live chat
 
 
   
