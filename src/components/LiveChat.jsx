@@ -38,7 +38,7 @@ const LiveChat = () => {
           e.preventDefault();
           dispatch(
             addChatMessages({
-              name: "Sampreeth Chetti",
+              name: "User",
               message: liveMessage,
             })
           );

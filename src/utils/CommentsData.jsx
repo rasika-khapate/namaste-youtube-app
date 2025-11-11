@@ -1,14 +1,14 @@
 const CommentsData = [
   {
-    name: "Sampreeth",
+    name: "User",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
     replies: [
       {
-        name: "Sampreeth",
+        name: "User",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
         replies: [
           {
-            name: "Sampreeth",
+            name: "User",
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
             replies: [],
           },
@@ -18,15 +18,15 @@ const CommentsData = [
   },
 
   {
-    name: "Sampreeth",
+    name: "User",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
     replies: [
       {
-        name: "Sampreeth",
+        name: "User",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
         replies: [
           {
-            name: "Sampreeth",
+            name: "User",
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
             replies: [],
           },
@@ -35,42 +35,42 @@ const CommentsData = [
     ],
   },
   {
-    name: "Sampreeth",
+    name: "User",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
     replies: [
       {
-        name: "Sampreeth",
+        name: "User",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
         replies: [
           {
-            name: "Sampreeth",
+            name: "User",
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
             replies: [
               {
-                name: "Sampreeth",
+                name: "User",
                 text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
                 replies: [],
               },
               {
-                name: "Sampreeth",
+                name: "User",
                 text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
                 replies: [
                   {
-                    name: "Sampreeth",
+                    name: "User",
                     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
                     replies: [],
                   },
                   {
-                    name: "Sampreeth",
+                    name: "User",
                     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
                     replies: [
                       {
-                        name: "Sampreeth",
+                        name: "User",
                         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
                         replies: [],
                       },
                       {
-                        name: "Sampreeth",
+                        name: "User",
                         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
                         replies: [],
                       },
@@ -85,25 +85,25 @@ const CommentsData = [
     ],
   },
   {
-    name: "Sampreeth",
+    name: "User",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
     replies: [],
   },
   {
-    name: "Sampreeth",
+    name: "User",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
     replies: [],
   },
   {
-    name: "Sampreeth",
+    name: "User",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
     replies: [],
   },
   {
-    name: "Sampreeth",
+    name: "User",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
     replies: [],
   },
 ];
 
-export default CommentsData
+export default CommentsData;

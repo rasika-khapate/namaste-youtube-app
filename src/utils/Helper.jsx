@@ -180,22 +180,22 @@ export function generateRandomName() {
 }
 
 var sentences = [
-  "so fat not even Dora can explore her",
-  "so  fat I swerved to miss her and ran out of gas",
-  "so smelly she put on Right Guard and it went left",
-  "so fat she hasn’t got cellulite, she’s got celluheavy",
-  "so fat she don’t need no internet – she’s already world wide",
-  "so hair her armpits look like Don King in a headlock",
-  "so classless she could be a Marxist utopia",
-  "so fat she can hear bacon cooking in Canada",
-  "so fat she won “The Bachelor” because she all those other bitches",
-  "so stupid she believes everything that Brian Williams says",
-  "so ugly she scared off Flavor Flav",
-  "is like Domino’s Pizza, one call does it all",
-  "is twice the man you are",
-  "is like Bazooka Joe, 5 cents a blow",
-  "is like an ATM, open 24/7",
-  "is like a championship ring, everybody puts a finger in her",
+  "is trending faster than a viral meme!",
+  "always knows the best playlists to vibe to.",
+  "can’t stop watching coding tutorials at 2 AM.",
+  "has officially mastered the art of binge-watching.",
+  "just dropped the hottest video of the week!",
+  "is the reason autoplay was invented.",
+  "never skips the intro — pure dedication!",
+  "has more views than my weekend plans.",
+  "should totally start their own channel!",
+  "has impeccable taste in videos.",
+  "is breaking the algorithm with this click!",
+  "is about to go viral — just wait and see!",
+  "can turn any video into a masterpiece.",
+  "knows how to find hidden YouTube gems.",
+  "is here for the likes, but stays for the fun.",
+  "is basically part of the YouTube elite now.",
 ];
 
 export function getRandomSentence() {
@@ -203,26 +203,30 @@ export function getRandomSentence() {
   return sentences[index];
 }
 
-export const findPrime = num => {
-let i, primes = [2, 3], n = 5
-const isPrime = n => {
-    let i = 1, p = primes[i],
-        limit = Math.ceil(Math.sqrt(n))
+export const findPrime = (num) => {
+  let i,
+    primes = [2, 3],
+    n = 5;
+  const isPrime = (n) => {
+    let i = 1,
+      p = primes[i],
+      limit = Math.ceil(Math.sqrt(n));
     while (p <= limit) {
-        if (n % p === 0) {
-            return false
-        }
-        i += 1
-        p = primes[i]
+      if (n % p === 0) {
+        return false;
+      }
+      i += 1;
+      p = primes[i];
     }
-    return true
-}
-for (i = 2; i <= num; i += 1) {
+    return true;
+  };
+  for (i = 2; i <= num; i += 1) {
     while (!isPrime(n)) {
-        n += 2
+      n += 2;
     }
-    primes.push(n)
-    n += 2
-};
+    primes.push(n);
+    n += 2;
+  }
 
-return primes[num - 1] }
+  return primes[num - 1];
+};
